@@ -11,11 +11,11 @@ export const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
 
-  const login = async (data) => {
-    const res = await loginUser(data);
-    setUser(res.data.user);
-  };
-
+ const login = async (data) => {
+  await loginUser(data);
+  const me = await axiosInstance.get("/auth/me");
+  setUser(me.data.user);
+};
   const logout = async () => {
     await logoutUser();
     setUser(null);

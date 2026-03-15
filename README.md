@@ -7,7 +7,7 @@ A production-ready Task Management Application built with React, Node.js (Expres
 ## 🔗 Links
 
 - **Live URL:** `https://your-live-url.vercel.app` ← _Replace after deployment_
-- **GitHub Repo:** `https://github.com/your-username/task-manager` ← _Replace with your repo URL_
+- **GitHub Repo:** 'https://github.com/EmulationNerds685/taskManager'
 
 ---
 
